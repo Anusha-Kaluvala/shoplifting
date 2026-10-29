@@ -1,0 +1,13 @@
+opencv-python
+ultralytics
+numpy
+cvzone
+flask
+flask-cors
+flask-socketio
+ultralytics
+xgboost
+pandas
+pygame
+scikit-learn
+

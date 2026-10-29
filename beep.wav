@@ -1,0 +1,12 @@
+import pygame
+
+# Initialize pygame mixer
+pygame.mixer.init()
+
+def beep():
+    frequency = 1000  # Frequency of the beep (1000 Hz)
+    duration = 500  # Duration of the beep in milliseconds
+    sound = pygame.mixer.Sound(frequency, duration)  # Generate sound
+    sound.play()
+
+beep()

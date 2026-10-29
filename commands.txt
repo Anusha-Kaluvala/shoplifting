@@ -1,0 +1,73 @@
+
+# Suspicious Activity Detection System
+
+This project detects suspicious activity in shoplifting scenarios using YOLOv8 and an XGBoost model. The system processes video streams, identifies suspicious behavior, and saves annotated images to the `outputs` directory.
+
+## Features
+- Real-time video stream processing.
+- Detection of suspicious activity with alerts.
+- Saves suspicious frames with annotations.
+- Responsive UI using Tailwind CSS.
+
+## Installation
+
+### Prerequisites
+- Python 3.8+
+- `pip` installed
+
+### Steps
+1. Clone the repository:
+   open PowerShell
+   ```bash
+   cd SHOPLIFTING
+   ```
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   # For Windows PowerShell
+   .\venv\Scripts\Activate.ps1
+   ```
+3. Upgrade pip and install dependencies:
+   ```bash
+   python -m pip install --upgrade pip
+   pip install -r requirements.txt
+   ```
+
+4. Run the application:
+   ```bash
+   python main.py
+   ```
+
+## Usage
+1. Access the application in your web browser at `http://127.0.0.1:5000`.
+2. Upload a video for processing.
+3. View real-time detection with annotated frames.
+4. Suspicious frames will be saved in the `outputs` directory.
+5. After processing, a message will confirm the saved frames.
+
+## Directory Structure
+```
+project-root/
+├── venv/               # Virtual environment
+├── outputs/            # Directory for saving annotated frames
+├── requirements.txt    # Dependencies
+├── main.py             # Main application script
+├── templates/          # HTML templates for the frontend
+├── static/             # Static assets (CSS, JS)
+└── README.md           # Project documentation
+```
+
+## Dependencies
+Key packages used in the project:
+- `opencv-python`
+- `ultralytics` (YOLOv8)
+- `xgboost`
+- `flask`
+- `flask-socketio` (for real-time notifications)
+
+Refer to `requirements.txt` for the full list.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+---
